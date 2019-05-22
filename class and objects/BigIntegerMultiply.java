@@ -1,10 +1,11 @@
+//https://practice.geeksforgeeks.org/problems/biginteger-multiply/1/?track=module-3-classes%20and-biginteger-java
 {
 
 import java.io.*;
 import java.util.*;
 import java.math.BigInteger;
 
-class BigIntegerSum {
+class GFG {
 	
 	public static void main (String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -22,7 +23,7 @@ class BigIntegerSum {
 		    
 		    // Calling function add to add two BigIntegers
 		    MathematicalOperation obj = new MathematicalOperation();
-		    System.out.println(obj.add(x, y));
+		    System.out.println(obj.mul(x, y));
 		}
 		
 		
@@ -32,11 +33,9 @@ class BigIntegerSum {
 
 class MathematicalOperation{
     
-    static BigInteger add(BigInteger x, BigInteger y){
-        
-        BigInteger z = x.add(y);
-        return z;
-        
+    static BigInteger mul(BigInteger x, BigInteger y){
+    
+          return x.multiply(y);   
     }
     
 }

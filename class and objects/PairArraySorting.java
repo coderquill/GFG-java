@@ -47,7 +47,13 @@ class custom_Compare{
     
     
     static void sortPairs(Pair arr[], int N){
-        
+        Arrays.sort(arr, new Comparator<pair>() { 
+	@Override 
+	public int compare(Pair p1, Pair p2) 
+	{ 
+	return p1.x - p2.x; 
+	} 
+	});
         for(int i = 0;i<N;i++){
             System.out.print(arr[i].x + " " + arr[i].y + " ");
         }
